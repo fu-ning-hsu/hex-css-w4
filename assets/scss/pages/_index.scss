@@ -1,3 +1,371 @@
-.index-title {
-  font-size: 100px;
+/* BANNER */
+
+.banner {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.banner-subtitle {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #650300;
+  text-align: right;
+}
+
+.banner-title {
+  font-size: 64px;
+  line-height: 1.5;
+  color: #650300;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .banner-subtitle {
+    font-size: 16px;
+  }
+  
+  .banner-title {
+    font-size: 24px;
+  }
+  
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    background-position: top left;
+  }
+}
+
+/* FEATURES SECTION */
+
+.features {
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.feature-title {
+  margin-bottom: 32px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  color: #650300;
+  font-size: 84px;
+  margin-bottom: 27px;
+}
+
+.feature-item-title {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #650300;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .feature-list {
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-item {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+/* COLLECTIONS */
+
+.collections {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.collection-title {
+  margin-bottom: 48px;
+}
+
+.collection-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection-item {
+  width: 32%;
+}
+
+.collection-link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #AA0601;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .collection-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .collection-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .collection-item {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+/* DESIGNER */
+
+.designer-section {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.designer-container .section-title {
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.designer-list {
+  display: flex;
+}
+
+.designer-item {
+  width: 50%;
+}
+
+.designer-item-text {
+  background-color: #fff;
+  color: #AA0601;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.designer-item-bg {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.designer-item:nth-child(1) .designer-item-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true);
+}
+
+.designer-item:nth-child(2) .designer-item-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
+}
+
+@media (max-width: 992px) {
+  .designer-list {
+    flex-direction: column;
+  }
+  
+  .designer-item {
+    width: 100%;
+  }
+  
+  .designer-item:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .designer-item:nth-child(1) .designer-item-bg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true);
+  }
+  
+  .designer-item:nth-child(2) .designer-item-bg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true);
+  }
+}
+
+/* TESTIMONIAL */
+
+.testimonial-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.testimonial-section .section-title {
+  margin-bottom: 48px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-item {
+  width: 23%;
+  box-shadow: 0px 2px 6px #00000029;
+}
+
+.testimonial-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  height: 205px;
+}
+
+.testimonial-name,
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.testimonial-date {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #707070;
+}
+
+@media (max-width: 992px) {
+  .testimonial-list {
+    flex-wrap: wrap
+  }
+  
+  .testimonial-item {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-item {
+    width: 100%;
+  }
+}
+
+/* CONTACT FORM */
+
+.contact {
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact-container {
+  margin: 0 auto;
+  width: 35%;
+}
+
+.form-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.contact-title {
+  margin-bottom: 48px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+input {
+  background-color: #FBF2F2;
+  border: 1px solid #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+}
+
+textarea {
+  background-color: #FBF2F2;
+  margin-bottom: 16px;
+}
+
+.submit-btn {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #AA0601;
+  color: #fff;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 48px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    width: 75%;
+  }
+  
+  .form-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-container {
+    width: 95%;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
 }
