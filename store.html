@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-90bf2f6e.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-a8cce514.css">
-  </head>
-  <body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>眼鏡官網</title>
+  <script type="module" crossorigin src="/web-layout-training-vite/assets/main-90bf2f6e.js"></script>
+  <link rel="stylesheet" href="/web-layout-training-vite/assets/main-a8cce514.css">
+</head><body>
     <header>
     <div class="container header">
       <a href="./index.html" class="header-logo-link">
@@ -22,7 +28,54 @@
         <li class="nav-item"><a href="#" class="nav-link">常見問題</a></li>
       </ul>
     </div>
-  </header>    <h1>我是about</h1>
+  </header>
+    <div class="container store_container">
+
+       <h1 class="page_title">門市據點</h1>
+       <div class="store_select">
+        <label for="stores" class="select_text">選擇門市</label>
+        <select name="stores" id="stores">
+            <option class="select_opt" value="台北市">台北中山旗艦店</option>
+            <option class="select_opt" value="新北市">台北綠園店</option>
+        </select>
+        </div>
+       
+        <div class="store">
+            <div class="store_left">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="店面" class="store_img">
+                <div class="storepage">
+                <h3 class="storepage_title">台北中山旗艦店</h3>
+                <div class="storepage_info">
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">call</span>
+                        <p class="store_tel">電話：(02)000-1234</p>    
+                    </div>
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p class="store_time">營業時間：10:00-21:00</p>    
+                    </div>
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <p class="store_address">地址：台北市中山區南京東路25巷2-1號</p>    
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <div class="store_map"></div>    
+            <!-- <img src="../assets/images/store-map.png" alt="mao" class="store_map"> -->
+        </div>
+       
+    </div>
+
+
+
+
+
+
+
+
+
     <footer>
     <div class="container footer">
       <div class="footer-top-container">
@@ -64,7 +117,6 @@
       </div>
         
     </div>
-  </footer>
-    
-  </body>
+  </footer>    
+</body>
 </html>
