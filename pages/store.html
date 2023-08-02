@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./layout/head'); -%>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container store_container">
+
+       <h1 class="page_title">門市據點</h1>
+       <div class="store_select">
+        <label for="stores" class="select_text">選擇門市</label>
+        <select name="stores" id="stores">
+            <option class="select_opt" value="台北市">台北中山旗艦店</option>
+            <option class="select_opt" value="新北市">台北綠園店</option>
+        </select>
+        </div>
+       
+        <div class="store">
+            <div class="store_left">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="店面" class="store_img">
+                <div class="storepage">
+                <h3 class="storepage_title">台北中山旗艦店</h3>
+                <div class="storepage_info">
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">call</span>
+                        <p class="store_tel">電話：(02)000-1234</p>    
+                    </div>
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p class="store_time">營業時間：10:00-21:00</p>    
+                    </div>
+                    <div class="store_info_group">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <p class="store_address">地址：台北市中山區南京東路25巷2-1號</p>    
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+            <div class="store_map"></div>    
+            <!-- <img src="../assets/images/store-map.png" alt="mao" class="store_map"> -->
+        </div>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+    <%- include('./layout/footer') -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 @import 'reset.scss';
+@import 'variables.scss';
 @import './layout/general.scss';
 
 @import './layout/header.scss';
@@ -6,3 +7,5 @@
 
 
 @import './pages/index.scss';
+@import './pages/stores.scss';
+@import './pages/store.scss';
