@@ -55,10 +55,16 @@
     justify-content: space-between;
 }
 
-.post_title {
+.post_title a {
     font-size: 32px;
     line-height: 1.5;
     color: #650300;
+    text-decoration: none;
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: .7;
+    }
 }
 
 .post_info {

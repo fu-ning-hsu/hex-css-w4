@@ -1,0 +1,34 @@
+.faq_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.faq_title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.faq_item {
+    margin-bottom: 32px;
+    width: 70%;
+}
+
+.faq_q {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.faq_a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+   .faq_item {
+    width: 100%;
+   } 
+}
